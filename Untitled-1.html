@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Mascotas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        main section {
+            margin-bottom: 20px;
+        }
+
+        main img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        form div {
+            margin-bottom: 10px;
+        }
+
+        form label {
+            display: block;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+MILLAN VILLA ISABELLA NAOMI
+    <header>
+        <h1>Bienvenidos a Petcoor</h1>
+        <nav>
+            <ul>
+                <li><a href="#perros">Perros</a></li>
+                <li><a href="#gatos">Gatos</a></li>
+                <li><a href="#otros">Otros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="perros">
+            <h2>Perros</h2>
+            <p>Los perros son animales leales y cariñosos. Son conocidos por su inteligencia y su capacidad de ser entrenados para realizar diversas tareas.</p>
+            <img src="https://s1.1zoom.me/prev/557/Dogs_White_background_Bulldog_Paws_Glance_556699_600x400.jpg" alt="Un perro feliz">
+            <ul>
+                <li>Leales</li>
+                <li>Cariñosos</li>
+                <li>Inteligentes</li>
+            </ul>
+        </section>
+        <section id="gatos">
+            <h2>Gatos</h2>
+            <p>Los gatos son mascotas independientes y curiosas. Son excelentes cazadores y disfrutan de la comodidad del hogar.</p>
+            <img src="https://s1.1zoom.me/prev/586/Cats_Kittens_Glance_Gray_background_Snout_Head_585122_600x400.jpg" alt="Un gato relajado">
+            <ul>
+                <li>Independientes</li>
+                <li>Curiosos</li>
+                <li>Excelentes cazadores</li>
+            </ul>
+        </section>
+        <section id="otros">
+            <h2>Otros Animales</h2>
+            <p>Además de perros y gatos, hay muchas otras mascotas populares, como conejos, hámsteres y aves.</p>
+            <img src="https://www.shutterstock.com/image-photo/cat-dog-parrot-rabbit-hamster-600nw-2350982003.jpg" alt="Otros tipos de mascotas">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Animal</th>
+                        <th>Características</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Conejos</td>
+                        <td>Pequeños, cariñosos, requieren espacio para correr.</td>
+                    </tr>
+                    <tr>
+                        <td>Hámsteres</td>
+                        <td>Pequeños, nocturnos, fáciles de cuidar.</td>
+                    </tr>
+                    <tr>
+                        <td>Aves</td>
+                        <td>Coloridas, muchas especies, algunas pueden hablar.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>Nos encontramos en la siguiente dirección:</p>
+            <!-- Mapa de Google Maps incrustado -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0500611585845!2d-122.41941518468145!3d37.774929179758526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5e7a2b3b%3A0x555345dbb4e4b0e8!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1ses!2s!4v1626109479378!5m2!1ses!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Las Mascotas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
